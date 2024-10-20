@@ -9,8 +9,7 @@ import {
   SiBlueprint,
   SiUnrealengine,
   SiAdobephotoshop,
-  SiMongodb,
-  SiNodedotjs,
+  SiZulip,
   SiCplusplus,
 } from "react-icons/si";
 import { DiUnitySmall } from "react-icons/di";
@@ -45,6 +44,7 @@ const Tools = () => {
                 <SiUnrealengine size={50} />
                 <DiUnitySmall size={50} />
                 <SiAdobephotoshop size={50} />
+                <SiZulip size={50} />
               </AnimatedTools>
             </div>
           </div>
