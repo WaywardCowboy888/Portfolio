@@ -28,28 +28,28 @@ export type ProjectProps = {
 export const projects = [
     {
         id: 0,
-        name: "Eldora UI",
+        name: "PCG Cave",
         description:
             "open-source animated components built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
         technologies: [SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiFramer],
         techNames: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"],
         techLinks: ["https://www.typescriptlang.org/", "https://reactjs.org/", "https://nextjs.org/", "https://tailwindcss.com/", "https://www.framer.com/motion/"],
         github: "https://github.com/karthikmudunuri/eldoraui",
-        demo: "https://www.eldoraui.site/",
-        image: "/projects/eldoraui.png",
+        demo: "https://platinumpizza29.wixsite.com/ashwin-gandhi/copy-of-retro-doom-level-design",
+        image: "/projects/Cave1.png",
         available: true,
     },
     {
         id: 1,
-        name: "VR MALL",
+        name: "Hash 0123",
         description:
             "Developed an virtual mall by using Three.js and Typescript..",
         technologies: [SiWebgl,SiTypescript, SiReact],
         techNames: ["WebGL", "Typescript", "React"],
         techLinks: ["https://get.webgl.org/", "https://www.typescriptlang.org/", "https://reactjs.org/"],
         github: "https://github.com/karthikmudunuri/VRMALL",
-        demo: "https://vrmalldemo.netlify.app/",
-        image: "/projects/vrmall.png",
+        demo: "https://platinumpizza29.wixsite.com/ashwin-gandhi/copy-of-pcg-cave",
+        image: "/projects/hash4.png",
         available: true,
     },
 ];
