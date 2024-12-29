@@ -68,10 +68,33 @@ export default function ProjectPage() {
             alt="Unreal BluePrints"
             className="object-contain"
           />
-          <AnimatedBody
-            text="This is a text for the above image"
-            className="mt-20 text-start"
+          <div className="my-10 flex w-full flex-col gap-4 text-[18px] font-medium leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16 lg:max-w-[90%] lg:text-[24px] ">
+            <AnimatedBody
+              text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+            adipisci, nobis dolorum accusantium hic exercitationem tenetur quis
+            impedit libero atque ipsam est. Eos vero minima doloribus quae magni
+            ratione maiores dignissimos eveniet animi quod. Ex labore doloribus
+            iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam
+            ipsum expedita est consectetur!"
+            />
+          </div>
+        </div>
+        <div className="mx-auto flex h-full w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
+          <img
+            src={"/pcg/8.png"}
+            alt="Unreal BluePrints"
+            className="object-contain"
           />
+          <div className="my-10 flex w-full flex-col gap-4 text-[18px] font-medium leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16 lg:max-w-[90%] lg:text-[24px] ">
+            <AnimatedBody
+              text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+            adipisci, nobis dolorum accusantium hic exercitationem tenetur quis
+            impedit libero atque ipsam est. Eos vero minima doloribus quae magni
+            ratione maiores dignissimos eveniet animi quod. Ex labore doloribus
+            iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam
+            ipsum expedita est consectetur!"
+            />
+          </div>
         </div>
       </section>
     </div>
