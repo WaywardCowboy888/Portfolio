@@ -7,6 +7,8 @@ import Hero1 from "./Hero1.tsx";
 import { Project } from "../components/types/valibot.ts";
 import AnimatedTitle from "../animations/AnimatedTitle.tsx";
 import AnimatedBody from "../animations/AnimatedBody.tsx";
+import MasonarySection from "../components/work/masonarySection.tsx";
+import Image from "next/image";
 
 export default function ProjectPage() {
   const { id } = useParams();
@@ -15,7 +17,7 @@ export default function ProjectPage() {
   if (!project) return <p className="text-center">Project not found</p>;
 
   return (
-    <>
+    <div className="">
       <Hero1 props={project} />
       <section
         className="relative z-10 flex w-full flex-col items-center justify-start overflow-hidden bg-[#0E1016] pt-16 pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-56"
@@ -38,6 +40,40 @@ export default function ProjectPage() {
           </div>
         </div>
       </section>
-    </>
+      {/* Masonary section */}
+      <section className="bg-[#0E1016]">
+        <AnimatedTitle
+          text={"Photos"}
+          className={
+            "mb-10 text-center text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
+          }
+          wordSpace={"mr-[14px]"}
+          charSpace={"mr-[0.001em]"}
+        />
+        <MasonarySection />
+      </section>
+
+      <section className=" bg-[#0E1016] text-[#e4ded7]">
+        <AnimatedTitle
+          text={"Master Material"}
+          className={
+            "mb-10 text-center text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
+          }
+          wordSpace={"mr-[14px]"}
+          charSpace={"mr-[0.001em]"}
+        />
+        <div className="mx-auto flex h-full w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
+          <img
+            src={"/pcg/7.png"}
+            alt="Unreal BluePrints"
+            className="object-contain"
+          />
+          <AnimatedBody
+            text="This is a text for the above image"
+            className="mt-20 text-start"
+          />
+        </div>
+      </section>
+    </div>
   );
 }

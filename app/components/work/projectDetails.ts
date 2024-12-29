@@ -1,17 +1,11 @@
 import {
-  SiCplusplus,
   SiFramer,
-  SiGithub,
-  SiNeovim,
   SiNextdotjs,
   SiReact,
-  SiRust,
   SiTailwindcss,
   SiTypescript,
   SiWebgl,
-  SiZig,
 } from "react-icons/si";
-import { IconType } from "react-icons";
 
 export type ProjectProps = {
   id: number;
@@ -31,7 +25,7 @@ export const projects = [
     id: 0,
     name: "PCG Cave",
     description:
-      "open-source animated components built with React, Typescript, Tailwind CSS, and Framer Motion. 100% open-source, and customizable.",
+      "In this project, I’m building an immersive cave environment in Unreal Engine using only PCG (Procedural Content Generation). It starts with shaping the cave using Unreal's modeling tools, then adding details like rock formations, shimmering crystals, and gold mineral deposits. To keep things streamlined, I’m using a single master material to create all the textures for the environment. I’m also leveraging procedural generation to automatically populate the cave with rocks and formations, making it feel more natural. For atmosphere, I’m using Niagara to create effects like floating dust particles and rolling fog. Finally, I’ll do a lighting pass to bring everything together and achieve the perfect look.",
     technologies: [SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiFramer],
     techNames: [
       "TypeScript",
