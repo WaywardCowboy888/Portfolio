@@ -1,3 +1,4 @@
+import { title } from "process";
 import {
   SiFramer,
   SiNextdotjs,
@@ -19,6 +20,12 @@ export type ProjectProps = {
   youtubeId: string;
   image: string;
   available: boolean;
+  images: {
+    title?: string;
+    src: string;
+    alt: string;
+    desc?: string;
+  }[];
 };
 
 export const projects = [
@@ -80,24 +87,26 @@ export const projects = [
       },
       {
         src: "/pcg/7.png",
-        alt: "Cave 7",
+        alt: "Material Photo",
+        title: "Master Material",
         desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
       },
       {
         src: "/pcg/8.png",
-        alt: "Cave 8",
+        alt: "Pcg Graph Photo",
+        title: "Pcg Graph",
         desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
       },
-      {
-        src: "/pcg/9.png",
-        alt: "Cave 9",
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
-      },
-      {
-        src: "/pcg/10.png",
-        alt: "Cave 10",
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
-      },
+      // {
+      //   src: "/pcg/9.png",
+      //   alt: "Cave 9",
+      //   desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+      // },
+      // {
+      //   src: "/pcg/10.png",
+      //   alt: "Cave 10",
+      //   desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+      // },
     ],
   },
   {
@@ -184,6 +193,7 @@ export const projects = [
     images: [
       {
         src: "/cityBlock/city1.png",
+        title: "City Block",
         alt: "Unreal BluePrints",
         desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
       },
@@ -215,22 +225,26 @@ export const projects = [
       {
         src: "/cityBlock/city7.png",
         alt: "Cave 7",
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+        title: "Plan and Reference",
+        desc: "I started with gathering references—photos of NYC streets, Pinterest boards, Google Street View, or even movies and games set in NYC. Capture the essence: brownstones, skyscrapers, fire escapes, bustling sidewalks, and street signs. Then sketched a rough map of the block. Think about layout and functionality: where are the streets, alleys, crosswalks, and public spaces? Add a bit of narrative flair, like a market on the corner or a construction site.",
       },
       {
         src: "/cityBlock/city8.png",
+        title: "Basic Layout",
         alt: "city 8",
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+        desc: "I started by using simple shapes like cubes and cylinders to block out the streets, sidewalks, and buildings, ensuring the scale captured NYC's dense and vertical character. The proportions were carefully chosen to evoke the city's unique sense of space and perspective.",
       },
       {
         src: "/cityBlock/city9.png",
+        title: "Building Placement",
         alt: "Cave 9",
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+        desc: "The layout incorporates a variety of structures, including towering skyscrapers, medium-sized office buildings, and low storefronts, to create a dynamic and visually engaging environment. Gaps were intentionally left for alleyways, entryways, and staircases, reflecting NYC's iconic layered navigation.",
       },
       {
         src: "/cityBlock/city10.png",
+        title: "Adding Details",
         alt: "Cave 10",
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+        desc: "Placeholder props such as street signs, pedestrians, streetlights, benches, and trash cans were added to bring the scene to life. I considered pedestrian flow, imagining where people might walk, pause, or explore, and strategically placed details to enhance immersion and guide player movement.",
       },
     ],
   },

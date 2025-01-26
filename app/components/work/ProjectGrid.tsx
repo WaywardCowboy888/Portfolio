@@ -18,6 +18,7 @@ const ProjectGrid = () => {
       <div className="grid w-[90%] grid-cols-1 grid-rows-2 gap-x-6 gap-y-10 lg:max-w-[1200px] lg:grid-cols-1">
         {data.map((project: ProjectProps) => (
           <ProjectCard
+            images={project.images}
             youtubeId={project.youtubeId}
             id={project.id}
             key={project.id}

@@ -39,47 +39,33 @@ export default function ProjectPage() {
           </div>
         </div>
       </section>
-      {/* Masonary section */}
-      <section className="bg-[#0E1016]">
-        <AnimatedTitle
-          text={"Photos"}
-          className={
-            "mb-10 text-center text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
-          }
-          wordSpace={"mr-[14px]"}
-          charSpace={"mr-[0.001em]"}
-        />
-        <MasonarySection />
-      </section>
 
       <section className=" bg-[#0E1016] text-[#e4ded7]">
-        <AnimatedTitle
-          text={"Master Material"}
-          className={
-            "mb-10 text-center text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
-          }
-          wordSpace={"mr-[14px]"}
-          charSpace={"mr-[0.001em]"}
-        />
-        <div className="mx-auto flex h-full w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
-          <img
-            src={project.images[7].src}
-            alt="Unreal BluePrints"
-            className="object-contain"
-          />
-          <div className="my-10 flex w-full flex-col gap-4 text-[18px] font-medium leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16 lg:max-w-[90%] lg:text-[24px] ">
-            <AnimatedBody text={project.images[7].desc} />
+        {project.images.slice(6).map((image, index) => (
+          <div key={index} className="">
+            {image.title && (
+              <AnimatedTitle
+                text={image.title}
+                className={
+                  "mb-10 text-center text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
+                }
+                wordSpace={"mr-[14px]"}
+                charSpace={"mr-[0.001em]"}
+              />
+            )}
+            <div className="mx-auto flex h-full w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
+              <img src={image.src} alt={image.alt} className="object-contain" />
+              {image.desc && (
+                <div className="my-10 flex w-full flex-col gap-4 text-[18px] font-medium leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16 lg:max-w-[90%] lg:text-[24px] ">
+                  <AnimatedBody text={image.desc} />
+                </div>
+              )}
+            </div>
           </div>
-        </div>
+        ))}
+
         <div className="mx-auto flex h-full w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
-          <img
-            src={project.images[8].src}
-            alt="Unreal BluePrints"
-            className="object-contain"
-          />
-          <div className="my-10 flex w-full flex-col gap-4 text-[18px] font-medium leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16 lg:max-w-[90%] lg:text-[24px] ">
-            <AnimatedBody text={project.images[8].desc} />
-          </div>
+          <MasonarySection />
         </div>
         {/* iframwe */}
         <div className="mx-auto flex h-full w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">

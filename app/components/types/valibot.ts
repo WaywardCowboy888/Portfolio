@@ -15,6 +15,7 @@ const projectSchema = object({
   available: boolean(),
   images: array(
     object({
+      title: string(),
       src: string(),
       alt: string(),
       desc: string(),
