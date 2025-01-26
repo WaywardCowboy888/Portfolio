@@ -1,8 +1,10 @@
+import { Project } from "../types/valibot.ts";
 import ProjectCard from "./ProjectCard.tsx";
 import { projects, ProjectProps } from "./projectDetails.ts";
 import React from "react";
 
 const ProjectGrid = () => {
+  const data = projects as Project[];
   return (
     <>
       <div className="mb-10 flex gap-16 text-[#e4ded7] md:mb-16  lg:mb-20 ">
@@ -13,9 +15,11 @@ const ProjectGrid = () => {
         </h4>
       </div>
 
-      <div className="grid w-[90%] grid-cols-1 grid-rows-2 gap-y-10 gap-x-6 lg:max-w-[1200px] lg:grid-cols-1">
-        {projects.map((project: ProjectProps) => (
+      <div className="grid w-[90%] grid-cols-1 grid-rows-2 gap-x-6 gap-y-10 lg:max-w-[1200px] lg:grid-cols-1">
+        {data.map((project: ProjectProps) => (
           <ProjectCard
+            images={project.images}
+            youtubeId={project.youtubeId}
             id={project.id}
             key={project.id}
             name={project.name}
@@ -24,7 +28,7 @@ const ProjectGrid = () => {
             techNames={project.techNames}
             techLinks={project.techLinks}
             github={project.github}
-            demo={project.demo}
+            video={project.video}
             image={project.image}
             available={project.available}
           />

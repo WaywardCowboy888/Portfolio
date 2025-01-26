@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+
 module.exports = {
   variants: {
     extend: {
@@ -7,6 +9,7 @@ module.exports = {
   },
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/preline/dist/*.js",
   ],
   theme: {
     extend: {
