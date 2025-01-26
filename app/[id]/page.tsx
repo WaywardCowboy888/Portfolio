@@ -41,7 +41,7 @@ export default function ProjectPage() {
       </section>
 
       <section className=" bg-[#0E1016] text-[#e4ded7]">
-        {project.images.slice(6).map((image, index) => (
+        {project.images.slice(5).map((image, index) => (
           <div key={index} className="">
             {image.title && (
               <AnimatedTitle
@@ -54,7 +54,11 @@ export default function ProjectPage() {
               />
             )}
             <div className="mx-auto flex h-full w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
-              <img src={image.src} alt={image.alt} className="object-contain" />
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="aspect-video object-contain"
+              />
               {image.desc && (
                 <div className="my-10 flex w-full flex-col gap-4 text-[18px] font-medium leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16 lg:max-w-[90%] lg:text-[24px] ">
                   <AnimatedBody text={image.desc} />
