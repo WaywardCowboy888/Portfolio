@@ -13,7 +13,7 @@ const Hero1 = ({ props }: { props: Project }) => {
       initial="initial"
       animate="animate"
     >
-      <HeroBackground1 />
+      <HeroBackground1 props={props} />
       <div className="mt-10 flex flex-col items-center justify-center sm:mt-0">
         <div
           className={`relative flex flex-col items-center justify-center ${inter.className} pointer-events-none`}

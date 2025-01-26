@@ -1,6 +1,7 @@
 import React from "react";
+import { Project } from "../components/types/valibot";
 
-const HeroBackground1: React.FC = () => {
+const HeroBackground1 = ({ props }: { props: Project }) => {
   return (
     <div className="absolute inset-0">
       <video
@@ -11,8 +12,9 @@ const HeroBackground1: React.FC = () => {
         muted
         preload="auto"
       >
-        <source src="/hero3.mp4" type="video/mp4" />
+        <source src={props.video} type="video/mp4" />
       </video>
+
       <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-bg-dark to-transparent" />
     </div>
   );
