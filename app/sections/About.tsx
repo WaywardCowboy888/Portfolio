@@ -30,11 +30,11 @@ const About = () => {
                   I earned my Bachelor's in Computer Science from VIT and
                   completed my Master's in Game Design at{" "}
                   <strong>{univeristy.toUpperCase()}</strong>. I have over a
-                  year of experience as a Level Designer at{" "}
+                  year of experience as Level Designer at{" "}
                   <strong className="rounded-xl bg-white p-2 text-black">
                     {ubisoft.toUpperCase()}
                   </strong>{" "}
-                  and spent a year working on a quiz game for an{" "}
+                  and spent a year working on quiz game for an{" "}
                   <strong className="rounded-xl bg-white p-2 text-black">
                     {experience.toLocaleUpperCase()}
                   </strong>{" "}
