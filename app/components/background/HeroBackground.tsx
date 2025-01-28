@@ -11,7 +11,7 @@ const HeroBackground: React.FC = () => {
         muted
         preload="auto"
       >
-        <source src="/hero2.mp4" type="video/mp4" />
+        <source src="/hero5.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-bg-dark to-transparent" />
     </div>

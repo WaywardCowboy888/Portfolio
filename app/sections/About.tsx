@@ -33,14 +33,13 @@ const About = () => {
                   year of experience as a Level Designer at{" "}
                   <strong className="rounded-xl bg-white p-2 text-black">
                     {ubisoft.toUpperCase()}
-                  </strong>
-                  , where I worked on a team of 10 to develop a and spent a year
-                  working on a quiz game for a{" "}
+                  </strong>{" "}
+                  and spent a year working on a quiz game for an{" "}
                   <strong className="rounded-xl bg-white p-2 text-black">
                     {experience.toLocaleUpperCase()}
-                  </strong>
-                  , which led to a 30% increase in engagement and retention
-                  rates among young users.
+                  </strong>{" "}
+                  that which led to a 30% increase in engagement and retention
+                  rates among young users
                 </>
               }
               className=""
