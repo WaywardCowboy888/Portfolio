@@ -1,4 +1,3 @@
-import { title } from "process";
 import {
   SiFramer,
   SiNextdotjs,
@@ -28,6 +27,7 @@ export type ProjectProps = {
   }[];
 };
 
+// Note: Add more than 5 images per project
 export const projects = [
   {
     id: 0,
@@ -112,7 +112,7 @@ export const projects = [
   {
     id: 1,
     name: "Hash 0123",
-    description: "Developed an virtual mall by using Three.js and Typescript..",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
     technologies: [SiWebgl, SiTypescript, SiReact],
     techNames: ["WebGL", "Typescript", "React"],
     techLinks: [
@@ -127,41 +127,53 @@ export const projects = [
     available: true,
     images: [
       {
-        src: "/projects/Cave1.png",
-        alt: "Cave 1",
-        desc: "Cave 1",
+        src: "/hash/hash1.png",
+        alt: "Hash1",
+        title: "Hash Photo 1",
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
       },
       {
-        src: "/projects/Cave2.png",
-        alt: "Cave 2",
+        src: "/hash/hash2.png",
+        alt: "hash 2",
+        title: "Hash Photo 2",
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
       },
       {
-        src: "/projects/Cave3.png",
-        alt: "Cave 3",
+        src: "/hash/hash3.png",
+        alt: "hash 3",
+        title: "Hash Photo 3",
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
       },
       {
-        src: "/projects/Cave4.png",
-        alt: "Cave 4",
+        src: "/hash/hash4.png",
+        alt: "hash4",
+        title: "Hash Photo 4",
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+      },
+      // temp image above real images below
+      {
+        src: "/hash/hash1.png",
+        alt: "Hash1",
+        title: "Hash Photo 1",
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
       },
       {
-        src: "/projects/Cave5.png",
-        alt: "Cave 5",
+        src: "/hash/hash2.png",
+        alt: "hash 2",
+        title: "Hash Photo 2",
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
       },
       {
-        src: "/projects/Cave6.png",
-        alt: "Cave 6",
+        src: "/hash/hash3.png",
+        alt: "hash 3",
+        title: "Hash Photo 3",
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
       },
       {
-        src: "/projects/Cave7.png",
-        alt: "Cave 7",
-      },
-      {
-        src: "/projects/Cave8.png",
-        alt: "Cave 8",
-      },
-      {
-        src: "/projects/Cave9.png",
-        alt: "Cave 9",
+        src: "/hash/hash4.png",
+        alt: "hash4",
+        title: "Hash Photo 4",
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
       },
     ],
   },
