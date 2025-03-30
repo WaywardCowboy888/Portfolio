@@ -41,7 +41,7 @@ export default function ProjectPage() {
       </section>
 
       <section className=" bg-[#0E1016] text-[#e4ded7]">
-        {project.images.slice(5).map((image, index) => (
+        {project.images.slice(5, project.images.length).map((image, index) => (
           <div key={index} className="">
             {image.title && (
               <AnimatedTitle

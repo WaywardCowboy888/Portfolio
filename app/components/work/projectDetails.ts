@@ -112,7 +112,8 @@ export const projects = [
   {
     id: 1,
     name: "Hash 0123",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+    description:
+      "#1234 is a first-person shooter that combines immersive narrative elements with dynamic, high-intensity combat. Set on an enigmatic, uncharted planet, the game challenges players to navigate the aftermath of a catastrophic spaceship crash while combating relentless alien adversaries.",
     technologies: [SiWebgl, SiTypescript, SiReact],
     techNames: ["WebGL", "Typescript", "React"],
     techLinks: [
@@ -150,30 +151,49 @@ export const projects = [
         title: "Hash Photo 4",
         desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
       },
-      // temp image above real images below
       {
-        src: "/hash/hash1.png",
-        alt: "Hash1",
+        src: "/hash/hash3.png",
+        alt: "hash 3",
         title: "Hash Photo 1",
         desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+      },
+      // temp image above real images below the main images start from 6
+      {
+        src: "/hash/hash3.png",
+        alt: "hash 3",
+        title: "Crash Site Awakening",
+        desc: "The journey begins in the wreckage of the spaceship. Players must navigate through damaged corridors and chaotic debris while piecing together the events leading to the crash.",
       },
       {
         src: "/hash/hash2.png",
         alt: "hash 2",
-        title: "Hash Photo 2",
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
-      },
-      {
-        src: "/hash/hash3.png",
-        alt: "hash 3",
-        title: "Hash Photo 3",
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+        title: "The Tunnel",
+        desc: "In Level 2, players are tasked with navigating a foreboding, dimly lit tunnel that serves as a critical juncture in the narrative. The environment is a labyrinthine network of narrow passageways and claustrophobic corridors, where darkness reigns and enemies lurks around every corner.",
       },
       {
         src: "/hash/hash4.png",
         alt: "hash4",
-        title: "Hash Photo 4",
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+        title: "Core Room",
+        desc: "In the Power Room, players encounter a dynamic blend of platforming challenges and combat. Set within the confines of a dilapidated energy facility, this level is characterized by its fractured infrastructure, with scattered debris and broken machinery that create a hazardous environment. ",
+      },
+
+      {
+        src: "/hash/hash1.png",
+        alt: "Hash 5",
+        title: "The Arena",
+        desc: "In this level, players enter an arena, a once-grand venue now marred by decay and chaos. The environment is defined by vast, broken seating areas and crumbling structures, remnants of its former glory. As the player maneuvers through this labyrinth of disintegrated concrete and scattered debris. Upon reaching the staging area—players confront their first major boss",
+      },
+      {
+        src: "/hash/hash5.png",
+        alt: "Hash 6",
+        title: "Vertical Level ",
+        desc: "In this vertical level, the player is thrust into a high-stakes chase, pursuing an enemy characterized by four octopus-like arms. The challenge lies in both evading and eliminating this formidable foe. As the pursuit culminates, the player encounters a mysterious element that may serve as their gateway to escape. ",
+      },
+      {
+        src: "/hash/hash6.png",
+        alt: "Hash 6",
+        title: "Gateaway",
+        desc: "At the level's conclusion, the player discovers an escape pod—an essential gateway that enables them to flee the disintegration of the mothership and ultimately escape the planet.",
       },
     ],
   },
