@@ -26,11 +26,95 @@ export type ProjectProps = {
     desc?: string;
   }[];
 };
+// VVpHdLdiqFE
 
 // Note: Add more than 5 images per project
 export const projects = [
   {
     id: 0,
+    name: "Project Lazarus",
+    description:
+        `
+Project Lazarus - Game Overview (Reimagined)
+
+Genre: Survival Horror | Narrative-Driven | Third-Person
+Tone: Gritty, bleak, emotional, and terrifying
+Status: In Development (Pre-Alpha)
+Engine: Unreal
+
+Summary:
+Project Lazarus is a survival horror experience set in a world consumed
+by a supernatural plague that reanimates the dead. You play as Eli Carter,
+a man who has already died once—and was brought back.
+
+Set in a quarantined, crumbling town soaked in decay and guilt, Eli is
+drawn into a harrowing journey to find his missing daughter, rumored to
+be alive inside a mysterious church compound known only as Lazarus
+Point—a cult-like sanctuary built around the belief that the risen dead are
+“God’s second chance.”
+
+But something is deeply wrong inside Lazarus Point.
+
+This is not your typical zombie outbreak—these are beings that remember,
+that whisper your name, and that cry at night.
+
+Core Pillars:
+*   Terrifying, old-school horror inspired by Resident Evil, Silent Hill, and
+    The Evil Within
+*   Limited resources, slow, deliberate combat, and claustrophobic
+    environments
+*   Deep emotional stakes: A father’s search for his daughter in a world
+    where the dead walk and the faithful lose their minds
+*   Religious horror undertones: resurrection, divine punishment,
+    martyrdom, and twisted hope
+*   Atmosphere > action: use of lighting, ambient audio, and environmental
+    storytelling to constantly unnerve
+`,
+    technologies: [SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiFramer],
+    techNames: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
+    techLinks: [
+      "https://www.typescriptlang.org/",
+      "https://reactjs.org/",
+      "https://nextjs.org/",
+      "https://tailwindcss.com/",
+      "https://www.framer.com/motion/",
+    ],
+    github: "https://github.com/karthikmudunuri/eldoraui",
+    video: "VVpHdLdiqFE",
+    youtubeId: "S7DPcJVKGjA",
+    image: "/s/sCover.png",
+    available: true,
+    images: [
+      {
+        src: "/s/s1.png",
+        alt: "Unreal BluePrints",
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+      },
+      {
+        src: "/s/s2.png",
+        alt: "Cave 2",
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+      },
+      {
+        src: "/s/s3.png",
+        alt: "Cave 3",
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+      },
+      {
+        src: "/s/s4.png",
+        alt: "Cave 4",
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla adipisci, nobis dolorum accusantium hic exercitationem tenetur quis impedit libero atque ipsam est. Eos vero minima doloribus quae magni ratione maiores dignissimos eveniet animi quod. Ex labore doloribus iure nulla ipsum adipisci, iusto ab? Excepturi corporis numquam ipsum expedita est consectetur!",
+      },
+    ],
+  },
+  {
+    id: 1,
     name: "PCG Cave",
     description:
       "In this project, I’m building an immersive cave environment in Unreal Engine using only PCG (Procedural Content Generation). It starts with shaping the cave using Unreal's modeling tools, then adding details like rock formations, shimmering crystals, and gold mineral deposits. To keep things streamlined, I’m using a single master material to create all the textures for the environment. I’m also leveraging procedural generation to automatically populate the cave with rocks and formations, making it feel more natural. For atmosphere, I’m using Niagara to create effects like floating dust particles and rolling fog. Finally, I’ll do a lighting pass to bring everything together and achieve the perfect look.",
@@ -110,7 +194,7 @@ export const projects = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     name: "Hash 0123",
     description:
       "#1234 is a first-person shooter that combines immersive narrative elements with dynamic, high-intensity combat. Set on an enigmatic, uncharted planet, the game challenges players to navigate the aftermath of a catastrophic spaceship crash while combating relentless alien adversaries.",
@@ -198,7 +282,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "City Block",
     description:
       "The environment features vertical exploration opportunities and landmarks, including a train, a store, diverse food stalls, and a lively market. Every detail, from the dynamic layout to the authentic atmosphere, captures the essence of New York City, providing players with a  urban playground that encourages exploration, and immersion of the city.",

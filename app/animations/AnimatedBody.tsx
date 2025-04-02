@@ -46,7 +46,7 @@ export default function AnimatedBody({
   };
 
   return (
-    <motion.p
+    <motion.div
       aria-label={text!.toString()} // Ensure aria-label is a string
       role="heading"
       className={className}
@@ -57,6 +57,6 @@ export default function AnimatedBody({
       variants={bodyAnimation}
     >
       {text}
-    </motion.p>
+    </motion.div>
   );
 }
