@@ -1,6 +1,7 @@
 import { useParams } from "next/navigation";
 import { projects } from "./projectDetails";
 import { Project } from "../types/valibot";
+import { Carousel } from "../carousel.tsx";
 
 export function roundToEven(num: number): number {
   const rounded = Math.round(num);
@@ -19,18 +20,25 @@ export default function MasonarySection() {
 
   const columns = roundToEven(images.length / 2);
 
+  // @ts-ignore
   return (
-    <div className="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <div className="mx-auto max-w-[85rem] overflow-auto px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
       <div className={`grid grid-cols-1 gap-2 sm:grid-cols-4`}>
-        {images.map((image, index) => (
-          <div className="space-y-2" key={index}>
-            <img
-              className="aspect-square h-auto w-full rounded-xl object-cover"
-              src={image.src}
-              alt={image.alt}
-            />
-          </div>
-        ))}
+        {/*{images.map((image, index) => (*/}
+        {/*  // <div className="space-y-2" key={index}>*/}
+        {/*  //   <img*/}
+        {/*  //     className="aspect-square h-auto w-full rounded-xl object-cover"*/}
+        {/*  //     src={image.src}*/}
+        {/*  //     alt={image.alt}*/}
+        {/*  //   />*/}
+        {/*  // </div>*/}
+        {/*    */}
+        {/*))}*/}
+        <Carousel
+          slides={images.map((image) => ({
+            src: image.src,
+          }))}
+        />
       </div>
     </div>
   );

@@ -43,7 +43,7 @@ const ProjectCard = ({
             alt={name}
             width={500}
             height={500}
-            className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
+            className={`absolute -bottom-2 h-full w-[70%] object-contain sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
               id % 2 === 0 ? "right-0" : "left-0"
             }`}
             priority={true}
@@ -60,7 +60,6 @@ const ProjectCard = ({
                   // target="_blank"
                   aria-label="Open GitHub Repository"
                   className="w-[43px] rounded-full bg-white p-3 text-[20px] md:w-[65px] md:p-5 md:text-[24px] lg:w-[65px] lg:text-[28px]"
-                  data-blobity
                   data-blobity-radius="35"
                   data-blobity-offset-x="4"
                   data-blobity-offset-y="4"
@@ -107,23 +106,7 @@ const ProjectCard = ({
                 "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] "
               }
             />
-            <div className="col-start-1 col-end-2 mb-9 mt-9 grid grid-cols-5 gap-5">
-              {technologies.map((IconComponent, id) => (
-                <div key={id} className={"relative"}>
-                  <p
-                    // href={techLinks[id]}
-                    // target="_blank"
-                    aria-label={`Learn more about ${techNames[id]}`}
-                    className="w-[20px] text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
-                    title={techLinks[id]}
-                    data-blobity-tooltip={techNames[id]}
-                    data-blobity-magnetic="false"
-                  >
-                    <IconComponent />
-                  </p>
-                </div>
-              ))}
-            </div>
+
           </div>
         </Container>
       </motion.div>

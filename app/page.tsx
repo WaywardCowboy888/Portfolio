@@ -52,7 +52,7 @@ export default function Home() {
   });
 
   return (
-    <>
+    <div>
       <PreLoader />
       <Blur />
       <Color />
@@ -65,6 +65,6 @@ export default function Home() {
         <Contact />
         <Footer />
       </main>
-    </>
+    </div>
   );
 }

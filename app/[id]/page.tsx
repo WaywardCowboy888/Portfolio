@@ -34,7 +34,7 @@ export default function ProjectPage() {
 
           <div className="mx-auto flex w-full flex-col lg:max-w-[1200px] lg:flex-row lg:gap-20">
             <div className="mb-10 flex w-full flex-col gap-4 text-[18px] font-medium leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16 lg:max-w-[90%] lg:text-[24px] ">
-              <AnimatedBody text={project.description} />
+                {project.id === 0 ? <AnimatedBody text={<pre>{project.description}</pre>} /> :  <AnimatedBody text={project.description} /> }
             </div>
           </div>
         </div>
@@ -74,7 +74,8 @@ export default function ProjectPage() {
         {/* iframwe */}
         <div className="mx-auto flex h-full w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
           <iframe
-            src={`https://www.youtube.com/embed/${project.youtubeId}`}
+              src={project.id === 0 ? `https://www.youtube.com/embed/${project.video}` : `https://www.youtube.com/embed/${project.youtubeId}`}
+            // src={`https://www.youtube.com/embed/${project.youtubeId}`}
             title={project.name}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
