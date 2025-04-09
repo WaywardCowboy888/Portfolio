@@ -12,11 +12,6 @@ const ProjectCard = ({
   id,
   name,
   description,
-  technologies,
-  techNames,
-  techLinks,
-  github,
-  video,
   image,
   available,
 }: ProjectProps) => {
@@ -43,7 +38,9 @@ const ProjectCard = ({
             alt={name}
             width={500}
             height={500}
-            className={`absolute -bottom-2 h-full w-[70%] object-contain sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
+            blurDataURL={image}
+            placeholder="blur"
+            className={`absolute -top-2 h-48 w-[100%] object-cover sm:w-[85%] md:h-full md:w-[60%] md:object-contain lg:max-w-[55%] ${
               id % 2 === 0 ? "right-0" : "left-0"
             }`}
             priority={true}
@@ -86,7 +83,7 @@ const ProjectCard = ({
             )}
           </div>
           <div
-            className={`absolute text-white  ${
+            className={`absolute text-white   ${
               !(id % 2 === 0)
                 ? "right-0 top-32 ml-10 mr-0 md:right-0 md:ml-0 lg:right-0 lg:top-60  lg:mr-4"
                 : "left-10 top-32 ml-0 md:mr-12 lg:top-52 lg:ml-4"
@@ -106,7 +103,6 @@ const ProjectCard = ({
                 "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] "
               }
             />
-
           </div>
         </Container>
       </motion.div>
